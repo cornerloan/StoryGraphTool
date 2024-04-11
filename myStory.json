@@ -1,58 +1,73 @@
 {
     "Title": "Campus Life on the West Side",
-    "Credits": "Created by Adam Smith (amsmith@ucsc.edu).",
+    "Credits": "Engine created by Adam Smith (amsmith@ucsc.edu). Story created by Connor Lowe",
     "InitialLocation": "Kresge",
     "Locations": {
-        "Kresge": {
-            "Body": "This is Kresge College, lots of nice trees.",
+        "Home": {
+            "Body": "This is where you live",
             "Choices": [
                 {
-                    "Text": "South",
-                    "Target": "Porter"
+                    "Text": "Leave the house",
+                    "Target": "The Village"
                 }
             ]
         },
-        "Porter": {
-            "Body": "This is Porter College, the trees are nice here too.",
+        "The Forest": {
+            "Body": "The village is surrounded by a forest",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Kresge"
+                    "Text": "Head to the stone",
+                    "Target": "The Stone"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Rachel Carson"
+                    "Text": "Head to the cave",
+                    "Target": "The Cave"
                 }
             ]
         },
-        "Rachel Carson": {
-            "Body": "Rachel Carson College, more sun and fewer trees.",
-            "Choices": [
+        "The Castle": {
+            "Body": "The village has a massive castle",
+            "Choices":[
                 {
-                    "Text": "North",
-                    "Target": "Porter"
+                    "Text": "Head to the village",
+                    "Target": "The Village"
+                }
+            ]
+        },
+        "The Cave": {
+            "Body": "There is a cave in the forest, with rumors of a dragon",
+            "Choices":[
+                {
+                    "Text": "Head to the forest",
+                    "Target": "The Forest"
+                }
+            ]
+        },
+        "The Stone": {
+            "Body": "There seems to be a sword sticking out of it",
+            "Choices":[
+                {
+                    "Text": "Head to the forest",
+                    "Target": "The Forest"
+                }
+            ]
+        },
+        "The Village": {
+            "Body": "It ain't much but it's home",
+            "Choices":[
+                {
+                    "Text": "Head back inside your home",
+                    "Target": "Home"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Oakes"
-                }
-            ]
-        },
-        "Oakes": {
-            "Body": "Oakes College, even the buildings have tree bark on them.",
-            "Choices": [
-                {
-                    "Text": "North",
-                    "Target": "Rachel Carson"
+                    "Text": "Head to the castle",
+                    "Target": "The Castle"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Beyond"
+                    "Text": "Head into the forest",
+                    "Target": "The Forest"
                 }
             ]
-        },
-        "Beyond": {
-            "Body": "Grass, don't forget to check for ticks!"
         }
     }
 }

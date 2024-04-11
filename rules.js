@@ -1,6 +1,6 @@
 class Start extends Scene {
     create() {
-        this.engine.setTitle("Title goes here"); // TODO: replace this text using this.engine.storyData to find the story title
+        this.engine.setTitle(this.engine.storyData);
         this.engine.addChoice("Begin the story");
     }
 
