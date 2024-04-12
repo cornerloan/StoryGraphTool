@@ -9,10 +9,11 @@ class Engine {
         this.firstSceneClass = firstSceneClass;
         this.storyDataUrl = storyDataUrl;
 
-        this.header = document.body.appendChild(document.createElement("h1"));
+        this.header = document.body.appendChild(document.createElement("h1")); //add a new node to the object model titled h1
         this.output = document.body.appendChild(document.createElement("div"));
         this.actionsContainer = document.body.appendChild(document.createElement("div"));
 
+        //fetch gets something at a URL
         fetch(storyDataUrl).then(
             (response) => response.json()
         ).then(

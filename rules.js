@@ -1,6 +1,6 @@
 class Start extends Scene {
     create() {
-        this.engine.setTitle(this.engine.storyData);
+        this.engine.setTitle(this.engine.storyData.Title);
         this.engine.addChoice("Begin the story");
     }
 
@@ -11,13 +11,26 @@ class Start extends Scene {
 
 class Location extends Scene {
     create(key) {
-        let locationData = undefined; // TODO: use `key` to get the data object for the current story location
-        this.engine.show("Body text goes here"); // TODO: replace this text by the Body of the location data
+        let locationData = this.engine.storyData.Locations[key]; // TODO: use `key` to get the data object for the current story location DONE
+        console.log(locationData.Body);
+        this.engine.show(locationData.Body); // TODO: replace this text by the Body of the location data DONE
         
+        /*
         if(true) { // TODO: check if the location has any Choices
             for(let choice of ["example data"]) { // TODO: loop over the location's Choices
                 this.engine.addChoice("action text"); // TODO: use the Text of the choice
                 // TODO: add a useful second argument to addChoice so that the current code of handleChoice below works
+            }
+        } else {
+            this.engine.addChoice("The end.")
+        }
+        */
+        
+        if(typeof(locationData.Choices[0] != "undefined")) { // TODO: check if the location has any Choices
+            for(let choice of [locationData.Choices]) { // TODO: loop over the location's Choices
+                this.engine.addChoice(choice.Text, choice); // TODO: use the Text of the choice
+                // TODO: add a useful second argument to addChoice so that the current code of handleChoice below works
+                
             }
         } else {
             this.engine.addChoice("The end.")

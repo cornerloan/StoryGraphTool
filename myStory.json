@@ -1,7 +1,7 @@
 {
-    "Title": "Campus Life on the West Side",
+    "Title": "Sword in the Stone",
     "Credits": "Engine created by Adam Smith (amsmith@ucsc.edu). Story created by Connor Lowe",
-    "InitialLocation": "Kresge",
+    "InitialLocation": "Home",
     "Locations": {
         "Home": {
             "Body": "This is where you live",
