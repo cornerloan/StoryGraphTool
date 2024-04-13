@@ -22,6 +22,10 @@
                 {
                     "Text": "Head to the cave",
                     "Target": "The Cave"
+                },
+                {
+                    "Text": "Head back to the village",
+                    "Target": "The Village"
                 }
             ]
         },
