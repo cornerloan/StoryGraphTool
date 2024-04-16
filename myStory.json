@@ -35,6 +35,41 @@
                 {
                     "Text": "Head to the village",
                     "Target": "The Village"
+                },
+                {
+                    "Text": "Talk to the king",
+                    "Target": "The King"
+                }
+            ]
+        },
+        "The King": {
+            "Body": "\"Welcome adventurer, we are in dire need of help. There is a dragon who rests in a cave passed the forest who has recently caused damage to our farms.\"",
+            "Choices":[
+                {
+                    "Text":"Accept Quest",
+                    "Target": "The King2"
+                },
+                {
+                    "Text": "Decline Quest",
+                    "Target": "The King3"
+                }
+            ]
+        },
+        "The King2": {
+            "Body": "\"Thank you adventurer. I hope you have it in you.\"",
+            "Choices": [
+                {
+                    "Text": "Head back to the village",
+                    "Target": "The Village"
+                }
+            ]
+        },
+        "The King3": {
+            "Body": "\"Begone then, leave my castle.\"",
+            "Choices":[
+                {
+                    "Text":"Leave the castle",
+                    "Target": "The Village"
                 }
             ]
         },
@@ -44,7 +79,30 @@
                 {
                     "Text": "Head to the forest",
                     "Target": "The Forest"
+                },
+                {
+                    "Text": "Head further into the cave",
+                    "Target": "Dragon Lair"
                 }
+            ]
+        },
+        "Dragon Lair": {
+            "Body": "There is a sleeping dragon in this room, and livestock corpses scattered around",
+            "Choices":[
+                {
+                    "Text": "Retreat",
+                    "Target": "The Cave"
+                },
+                {
+                    "Text": "[Slay the dragon]",
+                    "Target": "Win"
+                }
+            ]
+        },
+        "Win": {
+            "Body": "Congratulations, you have slain the dragon and completed your quest!",
+            "Choices": [
+                
             ]
         },
         "The Stone": {
@@ -53,6 +111,28 @@
                 {
                     "Text": "Head to the forest",
                     "Target": "The Forest"
+                },
+                {
+                    "Text": "[Take Sword]",
+                    "Target": "The Sword"
+                }
+            ]
+        },
+        "The Stone Empty":{
+            "Body": "The stone seems to have no purpose anymore",
+            "Choices":[
+                {
+                    "Text": "Head to the forest",
+                    "Target": "The Forest"
+                }
+            ]
+        },
+        "The Sword":{
+            "Body": "It takes a bit of effort, but you manage to pull the sword out of the stone!",
+            "Choices":[
+                {
+                    "Text": "Put the sword away",
+                    "Target": "The Stone Empty"
                 }
             ]
         },
